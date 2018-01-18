@@ -67,7 +67,7 @@ O projeto comporta um api de CRUD simulando um serviço de loja (cliente, produt
 |`products/` | GET | Retorna um json com um todos os produto
 |`products/:slug` | GET | Retorna um json com um produto que tenha o slug correspondente
 |`products/id/:id` | GET | Retorna um json com um produto que tenha o id correspondente 
-|`/tags/:tag'` | GET | Retorna um json com todos produto que em suas tags tenha a tag correspondente
+|`/tags/:tag` | GET | Retorna um json com todos produto que em suas tags tenha a tag correspondente
 |`products/` | POST | Se autenticado e os dados envidas conforme os validardore cadastra um novo produto
 |`products/:id` | PUT | Se autenticado como admin atualiza o dados do produto o qual pertence o id passado
 |`products/` | DELETE | Se autenticado como admin deleta o produto o qual o id passado no corpo da requisição
@@ -76,6 +76,13 @@ O projeto comporta um api de CRUD simulando um serviço de loja (cliente, produt
 |`orders/` | POST | Se autenticado e os dados envidas conforme os validardores cadastra um novo pedido
 |`orders/:id` | PUT | Se autenticado como usuario  atualiza o dados do pedido o qual pertence o id passado
 |`orders/` | DELETE | Se autenticado como usuario o dono do pedi deleta o pedoido o qual o id passado no corpo da requisição
+|`users/` | GET | Retorna um json com um todos os usuarios
+|`users/id/:id` | GET | Retorna um json com um usuario que tenha o id correspondente
+|`users/` | POST | Cadastra um novo usuarios
+|`users/:id` | PUT | Atualiza o dados do  usuario o qual pertence o id passado
+|`users/` | DELETE | Deleta o usuario com o qual o id passado no corpo da requisição
+|`users/authenticate` | POST | Autentica o usuario gerando um token para requisições  autenticadas retornando o token e dados do usuario com nome email
+|`users/refresh-token` | POST | enviando um token valido e não expirado gera um novo token valido 
 
 
 
