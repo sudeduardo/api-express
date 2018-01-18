@@ -65,8 +65,18 @@ O projeto comporta um api de CRUD simulando um serviço de loja (cliente, produt
  --- | --- | --- 
 |`/`| GET | Retorna uma informação de teste com informações da API
 |`products/` | GET | Retorna um json com um todos os produto
-|`products/:slug` | GET | slug:Flores-> Retorna um json com um produto que tenha o slug correspondente
+|`products/:slug` | GET | Retorna um json com um produto que tenha o slug correspondente
 |`products/id/:id` | GET | Retorna um json com um produto que tenha o id correspondente 
 |`/tags/:tag'` | GET | Retorna um json com todos produto que em suas tags tenha a tag correspondente
-|`/` | POST | Se autenticado e os dados envidas conforme os validardore cadastra um novo produto
+|`products/` | POST | Se autenticado e os dados envidas conforme os validardore cadastra um novo produto
+|`products/:id` | PUT | Se autenticado como admin atualiza o dados do produto o qual pertence o id passado
+|`products/` | DELETE | Se autenticado como admin deleta o produto o qual o id passado no corpo da requisição
+|`orders/` | GET | Retorna um json com um todos os pedidos
+|`orders/id/:id` | GET | Retorna um json com um pedido que tenha o id correspondente
+|`orders/` | POST | Se autenticado e os dados envidas conforme os validardores cadastra um novo pedido
+|`orders/:id` | PUT | Se autenticado como usuario  atualiza o dados do pedido o qual pertence o id passado
+|`orders/` | DELETE | Se autenticado como usuario o dono do pedi deleta o pedoido o qual o id passado no corpo da requisição
+
+
+
 
