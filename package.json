@@ -1,0 +1,28 @@
+{
+  "name": "api-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "debug": "^3.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "guid": "0.0.12",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.9",
+    "nodemon": "^1.14.11",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "token_secret": "",
+
+    "port":"",
+
+    "sendgridKey": "",
+
+    "mongo_url": "",
+
+    "email_validator":"http://api.emailvalidator.co/?AccessKey=KEY_SERVICE_EMAIL_VALIDATOR&EmailAddress={email}&VerificationLevel=3",
+
+    "email_sender":"",
+
+}

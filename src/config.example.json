@@ -1,0 +1,14 @@
+{
+    "token_secret": "SERVER ENCRYPTION TOKEN CUSTOM VALUE",
+
+    "port":"EXPRESS PORT",
+
+    "sendgridKey": "KEY SENDGRID",
+
+    "mongo_url": "CONNECTION STRING MONGODB",
+
+    "email_validator":"http://api.emailvalidator.co/?AccessKey=KEY_SERVICE_EMAIL_VALIDATOR&EmailAddress={email}&VerificationLevel=3",
+
+    "email_sender":"EMAIL SENDER",
+
+}
