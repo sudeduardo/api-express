@@ -65,16 +65,7 @@ O projeto comporta um api de CRUD simulando um serviço de loja (cliente, produt
  --- | --- | --- | ---
 |`/`| GET | Retorna uma informação de teste com informações da API| { "title": "Node Store API", "version": "0.0.1"}
 |`products/` | GET | Retorna um json com um todos os produto| [{ "_id": "5a5e5061e665c028b40d53e4","title": "Flor","slug":"flor","price":5},{ "_id": "5a5e5061e665c028b40d543c","title": "Flora","slug":"flora","price":1}]  
-|`products/:slug` | GET | slug:Flores-> Retorna um json com um produto que tenha o slug correspondente|[{
-  "_id": "5a5e5061e665c028b40d53e4",
-  "title": "Flor",
-  "slug": "flor",
-  "description": "Flor é a estrutura reprodutora característica das plantas angiospérmicas. A função de uma flor é produzir sementes através da reprodução sexuada",
-  "price": 5,
-  "tags": [
-    "Flores",
-    "Primavera"
-  ]
+|`products/:slug` | GET | slug:Flores-> Retorna um json com um produto que tenha o slug correspondente|[{"id":"5a5e5061e665c028b40d53e4","title": "Flor","slug": "flor",description": "Flor é a estrutura reprodutora característica das plantas angiospérmicas. A função de uma flor é produzir sementes através da reprodução sexuada","price": 5,"tags": ["Flores","Primavera"]
 }] 
 |`products/id/:id` | GET | Retorna um json com um produto que tenha o id correspondente 
 |`/tags/:tag'` | GET | Retorna um json com todos produto que em suas tags tenha a tag correspondente
